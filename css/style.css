@@ -158,3 +158,14 @@ th:nth-child(7),
 th:nth-child(8) {
   text-align: right;
 }
+
+footer {
+  text-align: center;
+  color: lawngreen;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer a i {
+  color: lawngreen;
+}
