@@ -104,3 +104,57 @@ header h2 {
   margin-bottom: 1rem;
   cursor: pointer;
 }
+
+/* TABLE STYLES */
+
+table {
+  font-family: 'Kodchasan', palatino;
+  border-collapse: collapse;
+  background-color: rgb(218, 227, 242);
+  margin: auto;
+  margin-bottom: 2rem;
+  width: calc(100% - 1rem);
+}
+
+th,
+td {
+  padding: 5px 15px;
+}
+
+th {
+  font-family: 'Roboto';
+  font-weight: 500;
+  text-align: left;
+  background-color: rgb(81, 118, 181);
+  color: white;
+  font-size: 0.85rem;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(242, 244, 247);
+}
+
+tr {
+  border: 0.25px solid rgb(206, 215, 219);
+}
+
+tr:nth-child(1) {
+  border-bottom: 1.25px solid;
+}
+
+td {
+  font-family: 'Kodchasan', palatino;
+  font-size: 0.75rem;
+}
+
+td:nth-child(6),
+td:nth-child(7),
+td:nth-child(8) {
+  text-align: right;
+}
+
+th:nth-child(6),
+th:nth-child(7),
+th:nth-child(8) {
+  text-align: right;
+}
