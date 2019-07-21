@@ -4,10 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Meteorite Tracker</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Meteorite Landing Tracker</title>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/4a3aa12c75.js"></script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Kodchasan:200,600|Roboto:100,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="page_container">
+      <header>
+        <h1>EXPLORE |</h1>
+        <h2>NASA METEORITE DATA</h2>
+      </header>
+      <section id="meteorData">
+        <div id="pagination">
+          <div id="searchControls">
+            <form action="#" onsubmit="search()">
+              <input
+                type="search"
+                id="searchText"
+                value=""
+                placeholder="search by name"
+              />
+              <input type="submit" id="submitSearchText" value="Search" />
+            </form>
+            <div id="searchParams">
+              <div>
+                <input
+                  type="radio"
+                  name="searchParams"
+                  id="startsWith"
+                  checked
+                />
+                <label for="startsWith">name starts with</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="searchParams"
+                  id="includes"
+                  unchecked
+                />
+                <label for="includes">name includes</label>
+              </div>
+              <div>
+                <input type="radio" name="searchParams" id="exact" unchecked />
+                <label for="exact">exact name</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="paginationButtons">
+          <button onclick="backPage()">Previous</button>
+          <button onclick="nextPage()">Next</button>
+        </div>
+        <div id="tableContainer">
+          <table id="table"></table>
+        </div>
+      </section>
+      <footer>
+        Thomas Angeloni
+        <br />
+        <a href="https://github.com/TJANGEL/meteorite_tracker">
+          <i class="fab fa-github-square"></i>
+        </a>
+      </footer>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
