@@ -169,3 +169,59 @@ footer {
 footer a i {
   color: lawngreen;
 }
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 900px) {
+  table {
+    width: 500px;
+  }
+
+  td {
+    font-size: 0.5rem;
+  }
+
+  #tableContainer {
+    overflow: scroll;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  th,
+  td {
+    padding: 5px 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  #meteorData {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  #searchParams div {
+    font-size: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header h2 {
+    font-size: 1rem;
+  }
+
+  #page_container {
+    border: 2px solid black;
+  }
+
+  #pagination {
+    margin: 1rem 0;
+    width: 100%;
+    border: 2px solid;
+  }
+}
