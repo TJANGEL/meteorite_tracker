@@ -23,7 +23,7 @@ function checkStatus(res) {
   }
 }
 
-function generalAPICall(startIndex = 0, stopIndex = startIndex + 30) {
+function generalAPICall(startIndex = 0, stopIndex = startIndex + 20) {
   fetch(
     'https://data.nasa.gov/resource/gh4g-9sfh.json?$order=name&$limit=' +
       searchLimit +
