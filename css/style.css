@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+  background-image: url('img/meteorite_background.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#page_container {
+  width: calc(100vw - 20px);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto';
+  color: lawngreen;
+}
+
+header h1 {
+  font-weight: 100;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+header h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  padding-left: 2rem;
+  margin: 0 0;
+}
