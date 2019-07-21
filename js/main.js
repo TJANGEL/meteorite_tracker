@@ -11,9 +11,6 @@ document.querySelector('form').addEventListener('submit', function(event) {
 });
 
 /* GLOBAL API CALL */
-/* This call is intended for paging through ALL information without searching */
-/* Forward pagination is handled through subsequent uses of this call, backward pagination is handled in-house */
-/* If search parameters are entered, the 'SEARCH API CALL' will be used */
 
 function checkStatus(res) {
   if (res.ok) {
@@ -43,8 +40,6 @@ function generalAPICall(startIndex = 0, stopIndex = startIndex + 20) {
 generalAPICall();
 
 /* SEARCH API CALL */
-/* This call is intended to retrieve ALL information about the requested search */
-/* Pagination is implemented, but it's done in-house, not through subsequent API calls */
 
 let searchByNameStart = [
   'https://data.nasa.gov/resource/gh4g-9sfh.json?$where=starts_with(name,%20%27',
@@ -79,7 +74,7 @@ function searchAPICall(url, tryAgain = false, tryURL = '') {
     .catch(err => console.log(err));
 }
 
-/* IN-HOUSE PAGINATION */
+/* CUSTOM PAGINATION */
 
 function nextPage() {
   if (isGeneral) {
@@ -162,8 +157,6 @@ function search() {
   } else if (document.querySelector('#includes').checked) {
     let search = encodeURIComponent(searchText);
     let url = `${searchByNameIncludes[0]}${search}${searchByNameIncludes[1]}`;
-    // let search2 = encodeURIComponent(cappedSearchText);
-    // let url2 = `${searchByNameStart[0]}${search2}${searchByNameStart[1]}`;
     searchAPICall(url);
   } else {
     let search = encodeURIComponent(cappedSearchText);
