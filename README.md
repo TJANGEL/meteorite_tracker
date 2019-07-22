@@ -1,5 +1,7 @@
 # meteorite_tracker
 
+![screenshot](img/meteorite_landing_screenshot.png)
+
 Meteorite Landing Tracker built off of NASA data.
 
 User can search for specific meorite landings and will be given data on the meteorite: mass, class, latitude, longitude and date of falling or finding.
