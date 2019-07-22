@@ -205,7 +205,7 @@ function createTableHeader() {
     'ID',
     'Name',
     'Fall',
-    'Mass(g)',
+    'Mass (g)',
     'Class',
     'Latitude',
     'Longitude',

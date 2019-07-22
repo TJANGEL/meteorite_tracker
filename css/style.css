@@ -30,10 +30,6 @@ header h1 {
   padding: 0 0;
 }
 
-/* header h1 span {
-  font-weight: 400;
-} */
-
 header h2 {
   font-size: 1.75rem;
   font-weight: 500;
@@ -74,6 +70,10 @@ header h2 {
   font-size: 0.75rem;
 }
 
+#searchText {
+  padding: 5px 10px;
+}
+
 #searchText,
 #submitSearchText {
   font-size: 1.5rem;
@@ -85,8 +85,16 @@ header h2 {
 }
 
 #submitSearchText {
-  box-shadow: 1px 1px 2px rgb(55, 57, 58);
   background-color: rgb(218, 227, 242);
+  border: 2px solid #fff;
+  padding: 4px 8px;
+  margin-left: 5px;
+}
+
+#submitSearchText:hover {
+  cursor: pointer;
+  background: #fff;
+  border: 2px solid lawngreen;
 }
 
 #searchText {
@@ -97,9 +105,16 @@ header h2 {
   font-size: 1rem;
   font-family: 'Roboto';
   font-weight: 100;
+  padding: 5px 10px;
   border-radius: 3px;
-  box-shadow: 0px 2px 5px rgb(55, 57, 58);
   background-color: #ccc;
+  border: 2px solid #fff;
+}
+
+#paginationButtons button:hover {
+  cursor: pointer;
+  background: #fff;
+  border: 2px solid lawngreen;
 }
 
 #paginationButtons {
